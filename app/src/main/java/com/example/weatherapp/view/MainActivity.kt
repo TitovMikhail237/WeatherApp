@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                 binding.tvLon.text = data.coord.lon.toString()
 
                 Glide.with(this)
-                    .load("http://openweathermap.org/img/wn/" + data.weather.get(0).icon +"@2x.png")
+                    .load("http://openweathermap.org/img/wn/" + data.weather[0].icon +"@2x.png")
                     .into(binding.imgWeatherIcon)
             }
         })
